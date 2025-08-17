@@ -1,0 +1,22 @@
+{
+  "main": ".open-next/worker.js",
+  "name": "artbythea",
+  "compatibility_date": "2025-03-25",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+   "routes": [
+    {
+      "pattern": "artbythea.com",
+      "custom_domain": true
+    },
+      {
+      "pattern": "www.artbythea.com",
+      "custom_domain": true
+    }
+  ]
+}
