@@ -38,26 +38,25 @@ const slideInRight = {
 }
 
 const portraitArtworks = [
-  { title: "Blonde", image: "/placeholder.svg?height=400&width=300" },
-  { title: "Brunette", image: "/placeholder.svg?height=400&width=300" },
-  { title: "Red Dress", image: "/placeholder.svg?height=400&width=300" },
-  { title: "Hat Lady", image: "/placeholder.svg?height=400&width=300" },
-  { title: "Blue Portrait", image: "/placeholder.svg?height=400&width=300" },
+  { title: "Blonde", image: "/photos/blonde.jpg" },
+  { title: "Claudette", image: "/photos/claudette.jpg" },
+  { title: "Stormy Commute", image: "/photos/stormy-commute.jpg" },
+  { title: "Thinly Veiled", image: "/photos/thinly-veiled.jpg" },
+  { title: "Vintage Woman", image: "/photos/vintage-woman.jpg" },
 ]
 
 const abstractArtworks = [
-  { title: "Colorful Abstract", image: "/placeholder.svg?height=400&width=300" },
-  { title: "Geometric Forms", image: "/placeholder.svg?height=400&width=300" },
-  { title: "Flowing Colors", image: "/placeholder.svg?height=400&width=300" },
-  { title: "Mixed Media", image: "/placeholder.svg?height=400&width=300" },
-  { title: "Bold Patterns", image: "/placeholder.svg?height=400&width=300" },
+  { title: "Birds of a Feather", image: "/photos/birds-of-a-feather.jpg" },
+  { title: "Floral Mosaic", image: "/photos/floral-mosaic.jpg" },
+  { title: "Fragmented", image: "/photos/fragmented.jpg" },
+  { title: "Red Foundation", image: "/photos/red-foundation.jpg" },
+  { title: "The Horse Painting", image: "/photos/the-horse.jpg" },
 ]
 
 const landscapeArtworks = [
-  { title: "Forest Path", image: "/placeholder.svg?height=400&width=300" },
-  { title: "Ocean View", image: "/placeholder.svg?height=400&width=300" },
-  { title: "Mountain Trail", image: "/placeholder.svg?height=400&width=300" },
-  { title: "Waterfall", image: "/placeholder.svg?height=400&width=300" },
+  { title: "The Red Tree", image: "/photos/the-red-tree.jpg" },
+  { title: "Elements", image: "/photos/elements.jpg" },
+  { title: "Forest Path", image: "/photos/forest-path.jpg" },
 ]
 
 export default function HomePage() {
@@ -112,7 +111,7 @@ export default function HomePage() {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-500" />
               <Image
-                src="/placeholder.svg?height=600&width=500"
+                src="/thea.jpg"
                 alt="Thea Barbato - Artist Portrait"
                 width={500}
                 height={600}
@@ -127,34 +126,29 @@ export default function HomePage() {
             <div className="space-y-4">
               <h2 className="text-5xl font-bold text-foreground">Thea Barbato</h2>
               <p className="text-2xl text-primary font-medium italic">Turning Life Into Art</p>
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
-                View My Work
-              </Button>
+
             </div>
 
             <div className="space-y-6 text-foreground leading-relaxed text-lg">
               <p className="first-letter:text-6xl first-letter:font-bold first-letter:text-primary first-letter:float-left first-letter:mr-3 first-letter:mt-1">
-                Creating art has been a passion and love of mine since I was a little girl. I made art into my heart and
-                soul childhood, then life intervened as it frequently does. Consequently, my art was put on hold for a
-                long while, a little more than three decades.
+               Creating art has been a passion and love of mine since I was a little girl.  I made art into my teens and early adulthood,  then life intervened as it frequently does. Consequently, my art was put on hold for a long while, a little more than three decades, to be exact.  The spark that I had as a little girl had dimmed into an ember, quietly glowing, waiting for me to fan it once more into a fire. 
+
+
               </p>
 
               <p>
-                In recent years I've been able to return to my art and I am so grateful for the spark that I lost as a
-                little girl and learned over 30 colors, slowly growing, waiting for me to find it once more just a few
-                years ago.
+           That fire was ignited again when I took a drawing class at the local community college. Through that class, I was reintroduced to my love of art and began to get commissions for my pastel pet portraits.  Not long after that, pastels were replaced by oils and acrylics, which are my primary mediums now.  I am self-taught and enjoy painting a variety of subjects.
+
+
               </p>
 
               <p>
-                That fire was ignited again when I took a drawing class at the local community college. Through that
-                class, I was reintroduced to my love of art and began to get commissions for my guests' pet portraits.
-                Not long after that, projects were replaced by oils and I was able to take my art to the next level.
+           It’s a privilege to share my work and my God-given talent with you.  Not unlike many artists, I paint for the sheer love of the artistic process, but also the enjoyment of the finished work.  It is my ultimate satisfaction to make art for your pleasure, as the creative flame burns brighter than ever before.
+
+
               </p>
 
-              <blockquote className="border-l-4 border-primary pl-6 italic text-xl text-muted-foreground bg-muted/50 p-6 rounded-r-lg">
-                "It's a privilege to share my work and my God given voice with you. There is something magical that
-                happens when I work."
-              </blockquote>
+
             </div>
           </motion.div>
         </div>
@@ -195,7 +189,7 @@ export default function HomePage() {
                 <Card className="overflow-hidden hover-lift bg-card border-border group cursor-pointer">
                   <div className="relative overflow-hidden">
                     <Image
-                      src={`/placeholder.svg?height=400&width=300&query=portrait painting ${artwork.title}`}
+                      src={artwork.image}
                       alt={artwork.title}
                       width={300}
                       height={400}
@@ -248,7 +242,7 @@ export default function HomePage() {
                 <Card className="overflow-hidden hover-lift bg-card border-border group cursor-pointer">
                   <div className="relative overflow-hidden">
                     <Image
-                      src={`/placeholder.svg?height=400&width=300&query=abstract painting ${artwork.title}`}
+                      src={artwork.image}
                       alt={artwork.title}
                       width={300}
                       height={400}
@@ -290,7 +284,7 @@ export default function HomePage() {
           </motion.div>
 
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
@@ -301,7 +295,7 @@ export default function HomePage() {
                 <Card className="overflow-hidden hover-lift bg-card border-border group cursor-pointer">
                   <div className="relative overflow-hidden">
                     <Image
-                      src={`/placeholder.svg?height=400&width=300&query=landscape painting ${artwork.title}`}
+                      src={artwork.image}
                       alt={artwork.title}
                       width={300}
                       height={400}
@@ -327,7 +321,7 @@ export default function HomePage() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <div className="max-w-4xl mx-auto px-6 text-center">
+        {/* <div className="max-w-4xl mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -342,7 +336,7 @@ export default function HomePage() {
               Get In Touch
             </Button>
           </motion.div>
-        </div>
+        </div> */}
       </motion.section>
 
       {/* Footer */}
@@ -354,8 +348,8 @@ export default function HomePage() {
         viewport={{ once: true }}
       >
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <p className="text-muted-foreground">© 2024 Art by Thea. All rights reserved.</p>
-          <p className="text-sm text-muted-foreground mt-2">Crafted with passion and creativity</p>
+          <p className="text-muted-foreground">© 2025 Art by Thea. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground mt-2">Created by Asher Myers</p>
         </div>
       </motion.footer>
     </div>
